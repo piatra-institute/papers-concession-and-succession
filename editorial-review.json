@@ -1,0 +1,10 @@
+{
+  "manuscript_sha256": "d44f00708c555a988fcb6d5e3e6005e655bb2e0b80fe195cd0ff5f96963f9a2a",
+  "full_read": true,
+  "argument_review": true,
+  "structure_review": true,
+  "voice_review": true,
+  "source_review": true,
+  "final_read": true,
+  "notes": "Full read of the built PDF, all eleven pages, and of the manuscript source. Argument, structure and voice reviewed as recorded in editorial.md. The review changed the paper three times. First, the coupling originally read the divergence at the boundary of the region where escalation helps, where the gain in removal probability is 0.0004 and the trade-off looks free; it now reads at the condition where escalation buys the largest gain, which is the strongest case for escalation and the fair place to argue against it. Second, seventeen voice diagnostics were triaged: eleven em-dashes, two negate-pivots, one inline contrastive, one pet-vocabulary item and one spelled quantity were all rewritten, leaving none. Third, the source review found four works named in the brief as cornerstone literature present in references.yaml but uncited in the manuscript, and four more consulted but unplaced; all were given sentences that assert only what the verification in sources.md supports, three of them as stated limits rather than as support. The abstract is 242 words and was written after the argument."
+}

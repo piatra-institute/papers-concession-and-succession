@@ -1,0 +1,9 @@
+[project]
+name = "concession-and-succession-sim"
+version = "0.1.0"
+description = "Coupling an incumbent's choice, differential organizational attrition, and three separate outcomes, to locate where removal and accountable succession move apart"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]

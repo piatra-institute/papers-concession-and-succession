@@ -1,0 +1,273 @@
+# CSL references with stable IDs; cite using Pandoc [@id] syntax.
+# Every entry below was resolved through Crossref against its DOI. Where an
+# online-first year differs from the print year, the Crossref year is used and
+# the discrepancy is recorded in sources.md.
+references:
+  - id: acemoglu2006
+    type: book
+    title: "Economic origins of dictatorship and democracy"
+    author: [{family: Acemoglu, given: Daron}, {family: Robinson, given: "James A."}]
+    publisher: Cambridge University Press
+    publisher-place: Cambridge
+    issued: {date-parts: [[2006]]}
+    DOI: 10.1017/cbo9780511510809
+  - id: buenodemesquita2003
+    type: book
+    title: "The logic of political survival"
+    author: [{family: "Bueno de Mesquita", given: Bruce}, {family: Smith, given: Alastair}, {family: Siverson, given: "Randolph M."}, {family: Morrow, given: "James D."}]
+    publisher: MIT Press
+    publisher-place: Cambridge, MA
+    issued: {date-parts: [[2003]]}
+    DOI: 10.7551/mitpress/4292.001.0001
+  - id: butcher2014
+    type: article-journal
+    title: "Manufacturing dissent: modernization and the onset of major nonviolent resistance campaigns"
+    author: [{family: Butcher, given: Charles}, {family: Svensson, given: Isak}]
+    container-title: Journal of Conflict Resolution
+    volume: "60"
+    issue: "2"
+    page: "311-339"
+    issued: {date-parts: [[2014]]}
+    DOI: 10.1177/0022002714541843
+  - id: chenoweth2015
+    type: article-journal
+    title: "Do contemporaneous armed challenges affect the outcomes of mass nonviolent campaigns?"
+    author: [{family: Chenoweth, given: Erica}, {family: Schock, given: Kurt}]
+    container-title: "Mobilization: An International Quarterly"
+    volume: "20"
+    issue: "4"
+    page: "427-451"
+    issued: {date-parts: [[2015]]}
+    DOI: 10.17813/1086-671x-20-4-427
+  - id: chenoweth2020
+    type: article-journal
+    title: "The future of nonviolent resistance"
+    author: [{family: Chenoweth, given: Erica}]
+    container-title: Journal of Democracy
+    volume: "31"
+    issue: "3"
+    page: "69-84"
+    issued: {date-parts: [[2020]]}
+    DOI: 10.1353/jod.2020.0046
+  - id: chenoweth2022dynamic
+    type: article-journal
+    title: "A dynamic model of nonviolent resistance strategy"
+    author: [{family: Chenoweth, given: Erica}, {family: Hocking, given: Andrew}, {family: Marks, given: Zoe}]
+    container-title: PLOS ONE
+    volume: "17"
+    issue: "7"
+    page: "e0269976"
+    issued: {date-parts: [[2022]]}
+    DOI: 10.1371/journal.pone.0269976
+  - id: chenoweth2022navco
+    type: article-journal
+    title: "Updating nonviolent campaigns: introducing NAVCO 2.1"
+    author: [{family: Chenoweth, given: Erica}, {family: Shay, given: "Christopher Wiley"}]
+    container-title: Journal of Peace Research
+    volume: "59"
+    issue: "6"
+    page: "876-889"
+    issued: {date-parts: [[2022]]}
+    DOI: 10.1177/00223433221092938
+  - id: clarke2022
+    type: article-journal
+    title: "Revolutionary violence and counterrevolution"
+    author: [{family: Clarke, given: Killian}]
+    container-title: American Political Science Review
+    volume: "117"
+    issue: "4"
+    page: "1344-1360"
+    issued: {date-parts: [[2022]]}
+    DOI: 10.1017/s0003055422001174
+  - id: debs2010
+    type: article-journal
+    title: "Regime type, the fate of leaders, and war"
+    author: [{family: Debs, given: Alexandre}, {family: Goemans, given: "H. E."}]
+    container-title: American Political Science Review
+    volume: "104"
+    issue: "3"
+    page: "430-445"
+    issued: {date-parts: [[2010]]}
+    DOI: 10.1017/s0003055410000195
+  - id: escriba2013
+    type: article-journal
+    title: "Repression, political threats, and survival under autocracy"
+    author: [{family: "Escribà-Folch", given: Abel}]
+    container-title: International Political Science Review
+    volume: "34"
+    issue: "5"
+    page: "543-560"
+    issued: {date-parts: [[2013]]}
+    DOI: 10.1177/0192512113488259
+  - id: geddes2014
+    type: article-journal
+    title: "Autocratic breakdown and regime transitions: a new data set"
+    author: [{family: Geddes, given: Barbara}, {family: Wright, given: Joseph}, {family: Frantz, given: Erica}]
+    container-title: Perspectives on Politics
+    volume: "12"
+    issue: "2"
+    page: "313-331"
+    issued: {date-parts: [[2014]]}
+    DOI: 10.1017/s1537592714000851
+  - id: haines1984
+    type: article-journal
+    title: "Black radicalization and the funding of civil rights: 1957-1970"
+    author: [{family: Haines, given: "Herbert H."}]
+    container-title: Social Problems
+    volume: "32"
+    issue: "1"
+    page: "31-43"
+    issued: {date-parts: [[1984]]}
+    DOI: 10.1525/sp.1984.32.1.03a00030
+  - id: hess2006
+    type: article-journal
+    title: "Repression, backfire, and the theory of transformative events"
+    author: [{family: Hess, given: David}, {family: Martin, given: Brian}]
+    container-title: "Mobilization: An International Quarterly"
+    volume: "11"
+    issue: "2"
+    page: "249-267"
+    issued: {date-parts: [[2006]]}
+    DOI: 10.17813/maiq.11.2.3204855020732v63
+  - id: kadivar2018
+    type: article-journal
+    title: "Mass mobilization and the durability of new democracies"
+    author: [{family: Kadivar, given: "Mohammad Ali"}]
+    container-title: American Sociological Review
+    volume: "83"
+    issue: "2"
+    page: "390-417"
+    issued: {date-parts: [[2018]]}
+    DOI: 10.1177/0003122418759546
+  - id: kuran1991
+    type: article-journal
+    title: "Now out of never: the element of surprise in the East European revolution of 1989"
+    author: [{family: Kuran, given: Timur}]
+    container-title: World Politics
+    volume: "44"
+    issue: "1"
+    page: "7-48"
+    issued: {date-parts: [[1991]]}
+    DOI: 10.2307/2010422
+  - id: lawrence2016
+    type: article-journal
+    title: "Repression and activism among the Arab Spring's first movers: evidence from Morocco's February 20th movement"
+    author: [{family: Lawrence, given: "Adria K."}]
+    container-title: British Journal of Political Science
+    volume: "47"
+    issue: "3"
+    page: "699-718"
+    issued: {date-parts: [[2016]]}
+    DOI: 10.1017/s0007123415000733
+  - id: levitsky2010
+    type: book
+    title: "Competitive authoritarianism: hybrid regimes after the Cold War"
+    author: [{family: Levitsky, given: Steven}, {family: Way, given: "Lucan A."}]
+    publisher: Cambridge University Press
+    publisher-place: Cambridge
+    issued: {date-parts: [[2010]]}
+    DOI: 10.1017/cbo9780511781353
+  - id: nepstad2013
+    type: article-journal
+    title: "Mutiny and nonviolence in the Arab Spring: exploring military defections and loyalty in Egypt, Bahrain, and Syria"
+    author: [{family: Nepstad, given: "Sharon Erickson"}]
+    container-title: Journal of Peace Research
+    volume: "50"
+    issue: "3"
+    page: "337-349"
+    issued: {date-parts: [[2013]]}
+    DOI: 10.1177/0022343313476529
+  - id: pearlman2011
+    type: book
+    title: "Violence, nonviolence, and the Palestinian national movement"
+    author: [{family: Pearlman, given: Wendy}]
+    publisher: Cambridge University Press
+    publisher-place: Cambridge
+    issued: {date-parts: [[2011]]}
+    DOI: 10.1017/cbo9781139013239
+  - id: raleigh2010
+    type: article-journal
+    title: "Introducing ACLED: an armed conflict location and event dataset"
+    author: [{family: Raleigh, given: Clionadh}, {family: Linke, given: Andrew}, {family: Hegre, given: "Håvard"}, {family: Karlsen, given: Joakim}]
+    container-title: Journal of Peace Research
+    volume: "47"
+    issue: "5"
+    page: "651-660"
+    issued: {date-parts: [[2010]]}
+    DOI: 10.1177/0022343310378914
+  - id: ritter2016
+    type: article-journal
+    title: "Preventing and responding to dissent: the observational challenges of explaining strategic repression"
+    author: [{family: Ritter, given: "Emily Hencken"}, {family: Conrad, given: "Courtenay R."}]
+    container-title: American Political Science Review
+    volume: "110"
+    issue: "1"
+    page: "85-99"
+    issued: {date-parts: [[2016]]}
+    DOI: 10.1017/s0003055415000623
+  - id: ryckman2019
+    type: article-journal
+    title: "A turn to violence: the escalation of nonviolent movements"
+    author: [{family: Ryckman, given: "Kirssa Cline"}]
+    container-title: Journal of Conflict Resolution
+    volume: "64"
+    issue: "2-3"
+    page: "318-343"
+    issued: {date-parts: [[2019]]}
+    DOI: 10.1177/0022002719861707
+  - id: simpson2022
+    type: article-journal
+    title: "Radical flanks of social movements can increase support for moderate factions"
+    author: [{family: Simpson, given: Brent}, {family: Willer, given: Robb}, {family: Feinberg, given: Matthew}]
+    container-title: PNAS Nexus
+    volume: "1"
+    issue: "3"
+    page: "pgac110"
+    issued: {date-parts: [[2022]]}
+    DOI: 10.1093/pnasnexus/pgac110
+  - id: slater2013
+    type: article-journal
+    title: "The strength to concede: ruling parties and democratization in developmental Asia"
+    author: [{family: Slater, given: Dan}, {family: Wong, given: Joseph}]
+    container-title: Perspectives on Politics
+    volume: "11"
+    issue: "3"
+    page: "717-733"
+    issued: {date-parts: [[2013]]}
+    DOI: 10.1017/s1537592713002090
+  - id: stephan2008
+    type: article-journal
+    title: "Why civil resistance works: the strategic logic of nonviolent conflict"
+    author: [{family: Stephan, given: "Maria J."}, {family: Chenoweth, given: Erica}]
+    container-title: International Security
+    volume: "33"
+    issue: "1"
+    page: "7-44"
+    issued: {date-parts: [[2008]]}
+    DOI: 10.1162/isec.2008.33.1.7
+  - id: sutton2014
+    type: article-journal
+    title: "Explaining political jiu-jitsu: institution-building and the outcomes of regime violence against unarmed protests"
+    author: [{family: Sutton, given: Jonathan}, {family: Butcher, given: "Charles R."}, {family: Svensson, given: Isak}]
+    container-title: Journal of Peace Research
+    volume: "51"
+    issue: "5"
+    page: "559-573"
+    issued: {date-parts: [[2014]]}
+    DOI: 10.1177/0022343314531004
+  - id: svolik2012
+    type: book
+    title: "The politics of authoritarian rule"
+    author: [{family: Svolik, given: "Milan W."}]
+    publisher: Cambridge University Press
+    publisher-place: Cambridge
+    issued: {date-parts: [[2012]]}
+    DOI: 10.1017/cbo9781139176040
+  - id: weinstein2006
+    type: book
+    title: "Inside rebellion: the politics of insurgent violence"
+    author: [{family: Weinstein, given: "Jeremy M."}]
+    publisher: Cambridge University Press
+    publisher-place: Cambridge
+    issued: {date-parts: [[2006]]}
+    DOI: 10.1017/cbo9780511808654

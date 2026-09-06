@@ -1,0 +1,35 @@
+slug: concession-and-succession
+web_slug: concession-and-succession
+title: 'Concession and Succession: Where Escalation Buys Removal at the Price of an Accountable Successor'
+header: Concession and Succession
+created: 2026-09
+date: September 2026
+paper_dir: paper
+has_simulation: true
+claims_target: results.json
+repo: git@github.com:piatra-institute/papers-concession-and-succession.git
+github: https://github.com/piatra-institute/papers-concession-and-succession
+status: published
+abstract: 'Two findings about campaigns against entrenched rulers are secure separately and have never
+  been put in the same model. Nonviolent campaigns unseat incumbents more often than armed ones, and campaigns
+  that escalate lose the participation that produces removal. Yet armed revolutions that do succeed resist
+  counterrevolution, while sustained unarmed mobilization is what produces successors that answer to anyone.
+  Escalation is therefore evaluated against one outcome at a time, and the outcomes are different. This
+  paper couples them in a stipulated model and computes what the coupling implies. Three results follow.
+  Making a campaign visible makes a ruler more likely to act rather than to concede: attention moves 610
+  waiting cases of the incumbent''s decision problem to repression against 400 to concession, and though
+  it enlarges the concession region from 0.158 to 0.286, escalation then cuts it to 0.102. Under repression
+  a campaign''s composition shifts toward its armed wing with nobody converting and nobody recruiting,
+  reaching parity after 6.24 periods of maximal repression, by which point 0.025 of the original campaign
+  is left standing. Coupling the two, escalation improves the odds of removal only where an intact civilian
+  campaign could strip at most 0.0475 of the apparatus''s cooperation; read where escalation looks best,
+  it raises the probability of removal from 0.107 to 0.184 and retains 0.109 of the accountable succession
+  that not escalating would have secured. Across 600 random parameter draws escalation helped removal
+  in 62, and lowered accountable succession in all 62.'
+build_resources:
+- simulation/output/figures/choice.png
+- simulation/output/figures/divergence.png
+web_blurb: Nonviolent campaigns unseat rulers more often; armed revolutions that succeed resist counterrevolution;
+  sustained unarmed mobilization is what produces successors that answer to anyone. Coupling the three
+  in one model finds that where escalation improves the odds of removal, it costs almost all of the accountable
+  succession.

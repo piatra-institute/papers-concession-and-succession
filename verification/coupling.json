@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "coupling",
+  "started": "2026-09-06T14:59:54.614687+00:00",
+  "finished": "2026-09-06T14:59:55.751205+00:00",
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "run_all.py"
+  ],
+  "cwd": "simulation",
+  "runtime": {
+    "scope": "recorder",
+    "python": "3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-15.1-arm64-arm-64bit"
+  },
+  "execution_result": null,
+  "execution": {
+    "status": "PASS",
+    "exit_code": 0,
+    "detail": "command completed"
+  },
+  "input_scope": "execution-v1",
+  "additional_inputs": [],
+  "inputs": {
+    "simulation/analyses.py": "e3bd59def2fc0c4e101ae7ac592f2df0938b91a11b096f385554b2ccbf1ec1bf",
+    "simulation/figures.py": "5d9ccdc23206b018a11f62687a24f60b3a0ba8515057ff775d8e037a17024a6a",
+    "simulation/pyproject.toml": "cc984478ea03f9b51cb0ad4357c06383681dcd4141124e559e5bdcf2fea0943a",
+    "simulation/run_all.py": "64a4bd52d0016cb6662b555c1ceb45bf5959f8113fc9b66505b0957caae3090d",
+    "simulation/uv.lock": "8962707552fd4db2118ab680d59e3ed891727d7cb143f2996cacc9dbe7d3ece4"
+  },
+  "artifacts": {
+    "simulation/output/results.json": "b1907cdd63daec4b7ba5ea40099e24da0ef6a94c411c2e106a9a3dab968b94d7",
+    "simulation/output/figures/choice.png": "43c3a4fe15d184323ff90c62718b6ff900aeb5b59cd2c798e85903de87e67a35",
+    "simulation/output/figures/divergence.png": "2d043d75657d631c9db40415df999b422df830de853e4d8fa5f31b34885c9d0f"
+  }
+}
