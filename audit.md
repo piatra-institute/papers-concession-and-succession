@@ -4,6 +4,13 @@ Dated log of editorial passes and verification runs. Newest first.
 
 ## 2026-09-22 — prose revision
 
+Correction of a grid-resolution threshold.
+  - The boundary below which escalation raises the probability of removal was published as 0.0475, the last grid point (step 0.0025) at which escalation helps. Bisection places the boundary at 0.0478; its share of the swept range is 0.080 where the grid count gave 0.083.
+  - `simulation/analyses.py` now locates the boundary by bisection and keeps the grid values alongside; a new invariant checks that the exact boundary lies within one grid step of the grid value and that escalation helps at it and not just above it (25 invariants pass).
+  - Abstract, text, figure 2(b) and the claim ledger updated. Found while auditing the collection for the grid-artifact error corrected in economics-after-cognitive-scarcity.
+
+## 2026-09-22 — prose revision
+
 Prose revision against the house standards. No computation, number, citation or conclusion changed.
   - Manuscript rewritten paragraph by paragraph; prose shortened from about 3,250 to about 2,750 words. Structure is now introduction, the incumbent's decision, differential attrition, the three outcomes, robustness, radical-flank effects, limitations.
   - Removed contrast framing ('rather than' from eleven instances to none), meta-commentary, epigrams and colloquial phrasing. Corrected an overstatement of Kadivar's finding in the abstract.

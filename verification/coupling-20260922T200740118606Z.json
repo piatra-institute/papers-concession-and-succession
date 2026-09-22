@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "id": "coupling",
-  "started": "2026-09-22T20:07:39.254074+00:00",
-  "finished": "2026-09-22T20:07:40.108667+00:00",
+  "started": "2026-09-22T19:59:35.243252+00:00",
+  "finished": "2026-09-22T19:59:36.080378+00:00",
   "command": [
     "uv",
     "run",
@@ -24,15 +24,15 @@
   "input_scope": "execution-v1",
   "additional_inputs": [],
   "inputs": {
-    "simulation/analyses.py": "144cc65f43296ffa3e733bae6370c66d5d323af0c966999912826c0078937d15",
+    "simulation/analyses.py": "e3bd59def2fc0c4e101ae7ac592f2df0938b91a11b096f385554b2ccbf1ec1bf",
     "simulation/figures.py": "346317d40fb65f1e78ff7e30120c34a8ca8635fcd0045de5631d1c462e30bb95",
     "simulation/pyproject.toml": "cc984478ea03f9b51cb0ad4357c06383681dcd4141124e559e5bdcf2fea0943a",
     "simulation/run_all.py": "64a4bd52d0016cb6662b555c1ceb45bf5959f8113fc9b66505b0957caae3090d",
     "simulation/uv.lock": "8962707552fd4db2118ab680d59e3ed891727d7cb143f2996cacc9dbe7d3ece4"
   },
   "artifacts": {
-    "simulation/output/results.json": "d4b3909d47e86eeae4853dc5204abefac9971342ac1c6526d04f75720dd823f2",
+    "simulation/output/results.json": "b1907cdd63daec4b7ba5ea40099e24da0ef6a94c411c2e106a9a3dab968b94d7",
     "simulation/output/figures/choice.png": "1aa90b90a4b5749e2629740b37d33d57593fe073462f1f2f3adb7a97719d067c",
-    "simulation/output/figures/divergence.png": "dff98ce73b534a00fc2ddc5be7544fe8b074ef6cc3575dbc1ea390ce9fe954b1"
+    "simulation/output/figures/divergence.png": "2034b74fca5843a8691affc056366eabbeac18726db868d8462a0c78c8987f2e"
   }
 }

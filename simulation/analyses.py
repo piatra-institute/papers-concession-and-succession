@@ -343,7 +343,19 @@ def _analyse(strip: float, p: dict) -> dict:
 def run_coupling() -> dict:
     profile = [_analyse(float(s), BASE) for s in STRIP_GRID]
     helped = [r for r in profile if r["removal_helped"]]
-    threshold = max(r["strip"] for r in helped) if helped else None
+    threshold_grid = max(r["strip"] for r in helped) if helped else None
+    # the grid gives only the last evaluated point where escalation helps; the
+    # boundary itself lies between that point and the next and is found by bisection
+    threshold = threshold_grid
+    if helped and threshold_grid < STRIP_GRID[-1]:
+        lo, hi = threshold_grid, threshold_grid + float(STRIP_GRID[1] - STRIP_GRID[0])
+        for _ in range(60):
+            mid = (lo + hi) / 2
+            if _analyse(mid, BASE)["removal_helped"]:
+                lo = mid
+            else:
+                hi = mid
+        threshold = lo
 
     # read the divergence where escalation looks best, not where it looks worst:
     # the institutional condition under which escalating buys the largest gain in
@@ -382,7 +394,9 @@ def run_coupling() -> dict:
         "focal_strip": focal["strip"], "rows": rows,
         "strip_grid_step": float(STRIP_GRID[1] - STRIP_GRID[0]),
         "strip_threshold": threshold,
-        "strip_share_helped": len(helped) / len(profile),
+        "strip_threshold_grid": threshold_grid,
+        "strip_share_helped": threshold / float(STRIP_GRID[-1]),
+        "strip_share_helped_grid": len(helped) / len(profile),
         "civic_intact": _civic_intact(BASE),
         "argmax_removal": focal["argmax_removal"],
         "max_removal": focal["max_removal"],
@@ -486,6 +500,11 @@ def run() -> dict:
         "escalation_only_helps_removal_where_cooperation_is_hard_to_strip":
             coupling["strip_threshold"] is not None
             and all(r["strip"] <= coupling["strip_threshold"] for r in helped),
+        "the_exact_boundary_lies_within_one_grid_step_of_the_grid_value":
+            0.0 <= coupling["strip_threshold"] - coupling["strip_threshold_grid"]
+            < coupling["strip_grid_step"]
+            and _analyse(coupling["strip_threshold"], BASE)["removal_helped"]
+            and not _analyse(coupling["strip_threshold"] + 1e-9, BASE)["removal_helped"],
         "the_three_optima_do_not_coincide":
             coupling["argmax_removal"] != coupling["argmax_accountable"],
         "durability_and_accountability_pull_against_each_other":

@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "7ebfb73d0ec08f5f0070534521c2f0e399712a51f784152316fc9b313a9168cc",
+  "pdf_sha256": "938fff777fb69155dea699afbf063b02ac776f2784dd74c3e3c673d5796f49a5",
   "page_count": 10,
   "pages_inspected": [
     1,
@@ -14,5 +14,5 @@
     10
   ],
   "all_pages_inspected": true,
-  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and seven body sections set correctly with descriptive headings; running head and pagination are continuous. The inline closed-form boundary on page 4 and the odds expression on page 4 render correctly. Both figures were regenerated with descriptive panel titles ('a duty' style editorial titles such as 'attrition changes the campaign without changing anyone's mind', 'escalation helps removal only in a narrow corner' and 'the price of the removal optimum' were replaced) and annotations that state values. The horizontal axis of figure 2(b) now uses 'withdraw' to match the text. Figures were inspected as source images and in page context on pages 5 and 6. The bibliography runs pages 8 to 10 with all 28 entries. No overfull lines, clipped figures or orphaned headings. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (6b125d53d061 to 7ebfb73d0ec0); the rendered text is byte-for-byte identical and no page was re-inspected."
+  "notes": "All ten pages were read at full size after the prose revision. After the threshold correction the PDF was rebuilt; the change was a same-length numeric substitution (0.0475 to 0.0478, 0.083 to 0.080), the page count is unchanged at 10, and pages 2, 5 and 6, which carry the changed values and figure 2, were re-inspected. Figure 2(b) now marks the boundary at 0.0478. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (2fe3ab530dd1 to 938fff777fb6); the rendered text is byte-for-byte identical and no page was re-inspected."
 }

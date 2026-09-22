@@ -1,6 +1,6 @@
 schema: 1
 coverage: reviewed
-reviewed_manuscript_sha256: 7072137e56cbce3820a4c7e96db67240ab858c113751ece65e013feb36c705d4
+reviewed_manuscript_sha256: f917eefebec6fab7cc237044729757ac161f1507269021d88b00b23d96299eb8
 claims:
 - id: grid-cells
   kind: computation
@@ -213,27 +213,28 @@ claims:
 - id: strip-threshold
   kind: computation
   passage: Escalation raises the probability of removal only where an intact civilian campaign could withdraw
-    at most 0.0475 of the apparatus's cooperation, which is 0.083 of the swept range.
+    at most 0.0478 of the apparatus's cooperation, which is 0.080 of the swept range.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
     pointer: /coupling/strip_threshold
-    reported: '0.0475'
+    reported: '0.0478'
     decimals: 4
     units: fraction of apparatus cooperation strippable by an intact civilian campaign
-    conditions: exhaustive sweep of escalation against the strippable-cooperation grid
+    conditions: boundary located by bisection between the last grid point where escalation helps and the
+      next
 - id: strip-share-helped
   kind: computation
   passage: Escalation raises the probability of removal only where an intact civilian campaign could withdraw
-    at most 0.0475 of the apparatus's cooperation, which is 0.083 of the swept range.
+    at most 0.0478 of the apparatus's cooperation, which is 0.080 of the swept range.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
     pointer: /coupling/strip_share_helped
-    reported: '0.083'
+    reported: '0.080'
     decimals: 3
     units: fraction of the swept strippable-cooperation range
-    conditions: exhaustive sweep of escalation against the strippable-cooperation grid
+    conditions: exact boundary divided by the upper end of the swept range
 - id: removal-without-escalating
   kind: computation
   passage: There, escalation raises the probability of removal from 0.107 to 0.184, a gain of 0.078.
