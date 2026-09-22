@@ -1,10 +1,10 @@
 schema: 1
 coverage: reviewed
-reviewed_manuscript_sha256: d44f00708c555a988fcb6d5e3e6005e655bb2e0b80fe195cd0ff5f96963f9a2a
+reviewed_manuscript_sha256: 7072137e56cbce3820a4c7e96db67240ab858c113751ece65e013feb36c705d4
 claims:
 - id: grid-cells
   kind: computation
-  passage: The decision is mapped over a grid of 4896 cells spanning institutional cooperation and leverage.
+  passage: The decision is computed over a grid of 4896 cells spanning institutional cooperation and leverage.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -15,8 +15,8 @@ claims:
     conditions: exhaustive sweep of the stated grid; all constants as declared in simulation/analyses.py
 - id: wait-to-repress
   kind: computation
-  passage: Of the cells where a low-attention ruler would wait, 610 move to repression and 400 move to
-    concession, a ratio of 1.525.
+  passage: Of the cells in which a low-attention ruler would wait, 610 move to repression and 400 to concession,
+    a ratio of 1.525.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -27,8 +27,8 @@ claims:
     conditions: exhaustive sweep of the stated grid; all constants as declared in simulation/analyses.py
 - id: wait-to-concede
   kind: computation
-  passage: Of the cells where a low-attention ruler would wait, 610 move to repression and 400 move to
-    concession, a ratio of 1.525.
+  passage: Of the cells in which a low-attention ruler would wait, 610 move to repression and 400 to concession,
+    a ratio of 1.525.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -39,8 +39,8 @@ claims:
     conditions: exhaustive sweep of the stated grid; all constants as declared in simulation/analyses.py
 - id: urgency-ratio
   kind: computation
-  passage: Of the cells where a low-attention ruler would wait, 610 move to repression and 400 move to
-    concession, a ratio of 1.525.
+  passage: Of the cells in which a low-attention ruler would wait, 610 move to repression and 400 to concession,
+    a ratio of 1.525.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -51,8 +51,8 @@ claims:
     conditions: exhaustive sweep of the stated grid; all constants as declared in simulation/analyses.py
 - id: concede-low-attention
   kind: computation
-  passage: The concession region grows from 0.158 of the swept region at low attention to 0.286 at high
-    attention.
+  passage: Overall, attention enlarges the region in which concession is cheapest, from 0.158 of the swept
+    region at low attention to 0.286 at high attention.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -63,8 +63,8 @@ claims:
     conditions: exhaustive sweep of the stated grid; all constants as declared in simulation/analyses.py
 - id: concede-high-attention
   kind: computation
-  passage: The concession region grows from 0.158 of the swept region at low attention to 0.286 at high
-    attention.
+  passage: Overall, attention enlarges the region in which concession is cheapest, from 0.158 of the swept
+    region at low attention to 0.286 at high attention.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -75,7 +75,7 @@ claims:
     conditions: exhaustive sweep of the stated grid; all constants as declared in simulation/analyses.py
 - id: concede-escalated
   kind: computation
-  passage: But escalation then cuts it to 0.102, a loss of 0.183, larger than attention's gain.
+  passage: Escalation then reduces it to 0.102, a loss of 0.183 that exceeds the gain from attention.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -87,7 +87,7 @@ claims:
       escalation 0.60
 - id: concession-region-lost
   kind: computation
-  passage: But escalation then cuts it to 0.102, a loss of 0.183, larger than attention's gain.
+  passage: Escalation then reduces it to 0.102, a loss of 0.183 that exceeds the gain from attention.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -99,8 +99,8 @@ claims:
       escalation 0.60
 - id: crossing-zero-leverage
   kind: computation
-  passage: With attention high, cooperation must fall to 0.280 before conceding is cheapest against a
-    campaign with no material leverage, and to 0.526 against one that has withdrawn all of it.
+  passage: With attention high, cooperation must fall to 0.280 before concession is cheapest against a
+    campaign with no material leverage, and to 0.526 against a campaign that has withdrawn all of it.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -111,8 +111,8 @@ claims:
     conditions: closed form, attention high, leverage 0
 - id: crossing-full-leverage
   kind: computation
-  passage: With attention high, cooperation must fall to 0.280 before conceding is cheapest against a
-    campaign with no material leverage, and to 0.526 against one that has withdrawn all of it.
+  passage: With attention high, cooperation must fall to 0.280 before concession is cheapest against a
+    campaign with no material leverage, and to 0.526 against a campaign that has withdrawn all of it.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -123,8 +123,8 @@ claims:
     conditions: closed form, attention high, leverage 1
 - id: armed-share-initial
   kind: computation
-  passage: A campaign that begins with 0.1 of its capacity in an armed wing, subjected to maximal repression,
-    reaches parity between the two wings after 6.24 periods.
+  passage: A campaign that begins with 0.1 of its capacity in an armed wing reaches parity between the
+    wings after 6.24 periods of maximal repression, when 0.025 of the original campaign remains.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -135,8 +135,8 @@ claims:
     conditions: stipulated retention rates 0.95 and 0.92 with sensitivities 0.28 and 0.60, six periods
 - id: parity-periods
   kind: computation
-  passage: A campaign that begins with 0.1 of its capacity in an armed wing, subjected to maximal repression,
-    reaches parity between the two wings after 6.24 periods.
+  passage: A campaign that begins with 0.1 of its capacity in an armed wing reaches parity between the
+    wings after 6.24 periods of maximal repression, when 0.025 of the original campaign remains.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -148,7 +148,8 @@ claims:
       repression intensity 1.0
 - id: capacity-at-parity
   kind: computation
-  passage: At that point 0.025 of the original campaign is still standing.
+  passage: A campaign that begins with 0.1 of its capacity in an armed wing reaches parity between the
+    wings after 6.24 periods of maximal repression, when 0.025 of the original campaign remains.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -160,9 +161,8 @@ claims:
       repression intensity 1.0, at the parity horizon
 - id: armed-share-full-repression
   kind: computation
-  passage: Run to a fixed six periods, maximal repression leaves the armed share at 0.479 and total capacity
-    at 0.029; the same six periods with no repression leave the armed share at 0.119, barely above where
-    it started.
+  passage: After six periods of maximal repression the armed share is 0.479 and total capacity is 0.029;
+    after six periods without repression the armed share is 0.119, close to its starting value.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -174,9 +174,8 @@ claims:
       repression intensity 1.0
 - id: capacity-full-repression
   kind: computation
-  passage: Run to a fixed six periods, maximal repression leaves the armed share at 0.479 and total capacity
-    at 0.029; the same six periods with no repression leave the armed share at 0.119, barely above where
-    it started.
+  passage: After six periods of maximal repression the armed share is 0.479 and total capacity is 0.029;
+    after six periods without repression the armed share is 0.119, close to its starting value.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -188,9 +187,8 @@ claims:
       repression intensity 1.0
 - id: armed-share-no-repression
   kind: computation
-  passage: Run to a fixed six periods, maximal repression leaves the armed share at 0.479 and total capacity
-    at 0.029; the same six periods with no repression leave the armed share at 0.119, barely above where
-    it started.
+  passage: After six periods of maximal repression the armed share is 0.479 and total capacity is 0.029;
+    after six periods without repression the armed share is 0.119, close to its starting value.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -202,8 +200,8 @@ claims:
       repression intensity 0.0
 - id: indiscriminate-null
   kind: computation
-  passage: Set the two sensitivities equal, so that repression falls on both wings alike, and the armed
-    share after six periods is 0.1, exactly where it began.
+  passage: When they are set equal, so that repression affects both wings alike, the armed share after
+    six periods is 0.1, its starting value.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -214,7 +212,7 @@ claims:
     conditions: both sensitivities set to 0.60, six periods
 - id: strip-threshold
   kind: computation
-  passage: Escalation raises the probability of removal only where an intact civilian campaign could strip
+  passage: Escalation raises the probability of removal only where an intact civilian campaign could withdraw
     at most 0.0475 of the apparatus's cooperation, which is 0.083 of the swept range.
   evidence:
     file: simulation/output/results.json
@@ -226,7 +224,7 @@ claims:
     conditions: exhaustive sweep of escalation against the strippable-cooperation grid
 - id: strip-share-helped
   kind: computation
-  passage: Escalation raises the probability of removal only where an intact civilian campaign could strip
+  passage: Escalation raises the probability of removal only where an intact civilian campaign could withdraw
     at most 0.0475 of the apparatus's cooperation, which is 0.083 of the swept range.
   evidence:
     file: simulation/output/results.json
@@ -271,7 +269,7 @@ claims:
     conditions: coupling read at the institutional condition maximising the gain in removal probability
 - id: argmax-removal
   kind: computation
-  passage: Removal peaks at escalation 0.61.
+  passage: Removal peaks at an escalation level of 0.61.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -282,8 +280,8 @@ claims:
     conditions: coupling read at the institutional condition maximising the gain in removal probability
 - id: argmax-durable
   kind: computation
-  passage: 'Durability peaks at 0.61 as well: the successor that escalation produces is more likely to
-    survive, exactly as Clarke''s mechanism predicts.'
+  passage: Durability also peaks at 0.61, since the successor regime that escalation produces is more
+    likely to survive, in line with Clarke's mechanism.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -305,8 +303,8 @@ claims:
     conditions: coupling read at the institutional condition maximising the gain in removal probability
 - id: accountable-retained
   kind: computation
-  passage: Escalating to the level that maximizes removal retains 0.109 of the accountable succession
-    that not escalating would have secured.
+  passage: Escalating to the level that maximises removal retains 0.109 of the probability of an accountable
+    successor that not escalating would have secured.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -317,9 +315,9 @@ claims:
     conditions: coupling read at the institutional condition maximising the gain in removal probability
 - id: divergence-band
   kind: computation
-  passage: Over 0.61 of the escalation range, the probability of removal is rising while the probability
-    of a removal that produces an accountable successor is falling, and over that same range durability
-    is rising while accountability falls.
+  passage: Over 0.61 of the escalation range, the probability of removal rises while the probability of
+    removal followed by an accountable successor falls, and over the same range durability rises while
+    accountability falls.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -330,7 +328,7 @@ claims:
     conditions: coupling read at the institutional condition maximising the gain in removal probability
 - id: ensemble-draws
   kind: computation
-  passage: Across 600 such draws, escalation raised the probability of removal in 62 of them.
+  passage: In 600 draws, escalation raised the probability of removal in 62.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -342,7 +340,7 @@ claims:
       in [0.6, 1.4]
 - id: ensemble-helped
   kind: computation
-  passage: Across 600 such draws, escalation raised the probability of removal in 62 of them.
+  passage: In 600 draws, escalation raised the probability of removal in 62.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -354,7 +352,7 @@ claims:
       in [0.6, 1.4]
 - id: ensemble-diverged
   kind: computation
-  passage: In all 62 it lowered accountable succession.
+  passage: In all 62 it lowered the probability of an accountable successor.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -366,8 +364,8 @@ claims:
       in [0.6, 1.4]
 - id: ensemble-max-retained
   kind: computation
-  passage: The best case across the entire ensemble retained 0.171 of the accountability that not escalating
-    would have secured; the median retained 0.066.
+  passage: The best case in the ensemble retained 0.171 of the accountability that not escalating would
+    have secured, and the median retained 0.066.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -379,8 +377,8 @@ claims:
       in [0.6, 1.4]
 - id: ensemble-median-retained
   kind: computation
-  passage: The best case across the entire ensemble retained 0.171 of the accountability that not escalating
-    would have secured; the median retained 0.066.
+  passage: The best case in the ensemble retained 0.171 of the accountability that not escalating would
+    have secured, and the median retained 0.066.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -392,8 +390,7 @@ claims:
       in [0.6, 1.4]
 - id: ensemble-median-gain
   kind: computation
-  passage: Where escalation helped, the median gain in the probability of removal was 0.050, which is
-    real and in the model never free.
+  passage: Where escalation helped, the median gain in the probability of removal was 0.050.
   evidence:
     file: simulation/output/results.json
     run_id: coupling
@@ -405,11 +402,10 @@ claims:
       in [0.6, 1.4]
 - id: src-baseline
   kind: source
-  passage: 'An original dataset of major resistance campaigns between 1900 and 2006 established that nonviolent
-    campaigns outperformed armed ones at achieving maximalist objectives, and proposed a mechanism: nonviolent
-    campaigns attract broader participation and prompt loyalty shifts among the opponent''s security forces,
-    while armed campaigns mobilize comparatively few people and hand the opponent a justification for
-    violent counterattack [@stephan2008].'
+  passage: An original dataset of major resistance campaigns between 1900 and 2006 showed that nonviolent
+    campaigns achieved maximalist objectives more often than armed ones, and attributed the difference
+    to broader participation and to loyalty shifts among the opponent's security forces, whereas armed
+    campaigns mobilised fewer people and gave the opponent a justification for violent counterattack [@stephan2008].
   evidence:
     citation_id: stephan2008
     locator: Abstract
@@ -418,8 +414,8 @@ claims:
       the comparative success finding, and the participation and loyalty-shift mechanisms attributed here.
 - id: src-armed-flank
   kind: source
-  passage: A companion result found that contemporaneous armed struggle does not improve an unarmed campaign's
-    outcomes, and is negatively associated with popular participation and thereby with success [@chenoweth2015].
+  passage: Contemporaneous armed struggle does not improve the outcomes of unarmed campaigns and is negatively
+    associated with participation and thereby with success [@chenoweth2015].
   evidence:
     citation_id: chenoweth2015
     locator: Abstract
@@ -428,9 +424,8 @@ claims:
       effect operating through popular participation.
 - id: src-defection
   kind: source
-  passage: 'The proximate mechanism has been studied on its own: security-force defection heavily influences
-    the outcome of nonviolent uprisings, and troops who receive benefits from the regime, or who believe
-    the regime can survive the uprising, do not defect [@nepstad2013].'
+  passage: Security-force defection strongly influences the outcome of nonviolent uprisings, and troops
+    who receive benefits from the regime, or who believe that it can survive, do not defect [@nepstad2013].
   evidence:
     citation_id: nepstad2013
     locator: Abstract
@@ -439,8 +434,8 @@ claims:
       to troops and perceived regime fragility.
 - id: src-pillars
   kind: source
-  passage: An agent-based treatment arrives at the same place by a different route, finding that targeting
-    the regime's pillars of support generates more defections than rapid mass recruitment, even for small
+  passage: An agent-based model reaches a similar conclusion by a different method, finding that targeting
+    the regime's pillars of support produces more defections than rapid mass recruitment, even for small
     campaigns [@chenoweth2022dynamic].
   evidence:
     citation_id: chenoweth2022dynamic
@@ -451,8 +446,8 @@ claims:
 - id: src-autocratic-transitions
   kind: source
   passage: Of the 280 autocratic regimes in existence between 1946 and 2010, transitions from one autocracy
-    to another make up about half of all regime changes [@geddes2014], and a large literature describes
-    the hybrid regimes that have resulted [@levitsky2010].
+    to another account for about half of all regime changes [@geddes2014], and many of the resulting regimes
+    are hybrids [@levitsky2010].
   evidence:
     citation_id: geddes2014
     locator: Abstract
@@ -461,11 +456,10 @@ claims:
       autocracy-to-autocracy transitions are about half of all regime changes.
 - id: src-mobilization-durability
   kind: source
-  passage: 'On one of them the evidence favours mobilization: across 112 young democracies in 80 countries,
-    new democracies growing out of mass mobilization survive longer, and sustained *unarmed* uprisings
-    produce the longest-lasting ones, because such campaigns are forced to build an organizational structure
-    that supplies a leadership cadre, links government to society, and constrains the post-transition
-    government [@kadivar2018].'
+  passage: 'For accountability the evidence favours mobilisation: across 112 young democracies in 80 countries,
+    democracies that emerged from mass mobilisation survived longer, and sustained unarmed uprisings produced
+    the longest-lasting ones, because such campaigns build organisations that supply a leadership cadre,
+    link government to society and constrain the post-transition government [@kadivar2018].'
   evidence:
     citation_id: kadivar2018
     locator: Abstract
@@ -474,9 +468,10 @@ claims:
       mobilization predicts survival, and the organizational-structure mechanism.
 - id: src-revolutionary-violence
   kind: source
-  passage: 'On the other the evidence runs the other way: violent revolutions are less likely to be reversed,
-    because they produce regimes with strong and loyal armies, and violence lowers the likelihood of counterrevolutionary
-    success without lowering the likelihood of counterrevolutionary emergence [@clarke2022].'
+  passage: 'For survival the evidence points the other way: violent revolutions are less likely to be
+    reversed because they produce regimes with strong and loyal armies, and violence lowers the likelihood
+    of counterrevolutionary success without lowering the likelihood of counterrevolutionary emergence
+    [@clarke2022].'
   evidence:
     citation_id: clarke2022
     locator: Abstract
@@ -485,9 +480,8 @@ claims:
       between counterrevolutionary success and emergence.
 - id: src-escalation-conditions
   kind: source
-  passage: 'That decision is not hypothetical: movements are collections of factions rather than unitary
-    actors, and escalation is likely when a movement contains violence-wielding factions and the campaign
-    is failing to make progress through nonviolent channels [@ryckman2019].'
+  passage: Movements are coalitions of factions, and escalation is more likely when a movement contains
+    violence-wielding factions and nonviolent tactics are failing [@ryckman2019].
   evidence:
     citation_id: ryckman2019
     locator: Abstract
@@ -496,8 +490,8 @@ claims:
       argument, and the failure-of-nonviolent-channels condition.
 - id: src-exit-fear
   kind: source
-  passage: 'This is the one place the model borrows a result rather than stipulating a shape: the less
-    punitive the consequences of losing office, the more a leader will concede to strike a bargain [@debs2010].'
+  passage: This term follows the finding that leaders concede more readily when the consequences of losing
+    office are less severe [@debs2010].
   evidence:
     citation_id: debs2010
     locator: Abstract
@@ -506,9 +500,9 @@ claims:
       make a leader more willing to concede.
 - id: src-endogeneity
   kind: source
-  passage: 'This is the model''s version of a caution the empirical literature has already issued from
-    the other side: dissent and repression are endogenous, and where a government represses preventively,
-    observed dissent does not predict responsive repression [@ritter2016].'
+  passage: 'The empirical literature makes a related point: dissent and repression are endogenous, and
+    where a government represses preventively, observed dissent does not predict responsive repression
+    [@ritter2016].'
   evidence:
     citation_id: ritter2016
     locator: Abstract
@@ -518,9 +512,9 @@ claims:
       result from the article is used.
 - id: src-repression-instruments
   kind: source
-  passage: 'This is consistent with the finding that different instruments do different work for a ruler:
-    political terror suppresses organized threats while restrictions on civil liberties deter collective
-    action, and the two have different effects on how a dictator eventually leaves [@escriba2013].'
+  passage: 'This is consistent with evidence that different repressive instruments serve different purposes:
+    political terror suppresses organised threats, restrictions on civil liberties deter collective action,
+    and the two have different effects on how a dictator eventually leaves office [@escriba2013].'
   evidence:
     citation_id: escriba2013
     locator: Abstract
@@ -529,10 +523,10 @@ claims:
       exits while restrictions on civil liberties deter both threat types.
 - id: src-radical-flank
   kind: source
-  passage: 'Two experiments with 2,772 participants found that the presence of a radical flank increases
-    support for a moderate faction in the same movement, that it is radical tactics rather than a radical
-    agenda that produces the effect, and that the mechanism is contrast: the moderate faction appears
-    less radical [@simpson2022], an effect first proposed decades earlier [@haines1984].'
+  passage: In two experiments with 2,772 participants, the presence of a radical flank increased support
+    for a moderate faction of the same movement; the effect was driven by radical tactics such as property
+    destruction or violence, and its mechanism was contrast, with the moderate faction appearing less
+    radical [@simpson2022].
   evidence:
     citation_id: simpson2022
     locator: Abstract
@@ -541,11 +535,10 @@ claims:
       the tactics-not-agenda finding, and the contrast mechanism.
 - id: src-backfire
   kind: source
-  passage: 'Repression that backfires, mobilizing more people than it removes, is not in the model, and
-    it is well documented: whether repression of unarmed protest backfires depends on pre-existing campaign
-    infrastructure and parallel media, which raise both domestic mobilization and security defections
-    after violent repression [@sutton2014; @hess2006], and exposure to a regime''s past repression can
-    raise later participation [@lawrence2016].'
+  passage: 'Repression can backfire and increase mobilisation: whether repression of unarmed protest backfires
+    depends on pre-existing campaign infrastructure and parallel media, which raise both domestic mobilisation
+    and security defections after violent repression [@sutton2014; @hess2006], and exposure to a regime''s
+    past repression can increase later participation [@lawrence2016].'
   evidence:
     citation_id: sutton2014
     locator: Abstract
@@ -556,8 +549,9 @@ claims:
       Crossref.
 - id: src-concession-from-strength
   kind: source
-  passage: Also absent is concession from strength, in which a ruling party embraces democratization because
-    it expects to keep winning [@slater2013].
+  passage: The model also omits concession from strength, in which a ruling party accepts democratisation
+    because it expects to keep winning elections [@slater2013]; the incumbent here concedes only when
+    concession is the cheapest of three options.
   evidence:
     citation_id: slater2013
     locator: Abstract
@@ -566,69 +560,68 @@ claims:
       conditions.
 - id: assume-stipulated-forms
   kind: assumption
-  passage: The exponential retention, the multiplicative accountability term, the additive cost structure
-    of the incumbent's decision and the hazard form of removal are choices, made to be transparent rather
-    than because any of them was estimated.
+  passage: 'The functional forms are stipulated: exponential retention, a multiplicative accountability
+    term, an additive cost structure for the incumbent''s decision and a hazard form for removal.'
   rationale: Every functional form in the model is chosen for transparency, not estimated. The ensemble
     in the previous section perturbs the constants but not the forms, so the reported magnitudes are properties
     of these choices. Changing a form could change the magnitudes and, for a sufficiently different accountability
     function, the direction of the third result.
 - id: assume-differential-sensitivity
   kind: assumption
-  passage: The differential sensitivity of clandestine and open organizations to repression is the parameter
-    the second section rests on, and no empirical estimate of it was found.
+  passage: The difference in sensitivity to repression between clandestine and open organisations drives
+    the attrition results, and we found no empirical estimate of it.
   rationale: The two retention sensitivities, 0.28 for the armed wing and 0.60 for the civilian wing,
     are stipulated. No empirical estimate was found in the search recorded in research.md. The direction
     of the composition shift follows from the organizational argument; every magnitude in that section
     is a function of the ratio between these two numbers.
 - id: assume-closed-form-tolerance
   kind: assumption
-  passage: This is verified against period-by-period iteration; the invariant requires agreement to within
-    $10^{-9}$ and the observed disagreement is at the level of double-precision rounding.
+  passage: The expression was checked against period-by-period iteration; the invariant requires agreement
+    to within $10^{-9}$, and the observed discrepancy is at the level of double-precision rounding.
   rationale: The invariant enforces agreement within 1e-9 between the closed form and the period-by-period
     iteration. The largest disagreement actually observed in the recorded run is 3.33067e-16, at /attrition/closed_form_max_error
     in simulation/output/results.json, which is double-precision rounding rather than a modelling discrepancy.
 - id: assume-ensemble-perturbation
   kind: assumption
-  passage: Every constant is perturbed by an independent uniform factor between 0.6 and 1.4, the institutional
-    condition is drawn at random, and the whole analysis is rerun.
+  passage: Each constant was multiplied by an independent uniform factor between 0.6 and 1.4, the institutional
+    setting was drawn at random, and the analysis was repeated.
   rationale: A uniform factor in [0.6, 1.4] applied independently to each constant is a stipulated perturbation
     scale, wide enough to break a knife-edge result and narrow enough to keep the model interpretable.
     It is not a posterior and carries no probabilistic interpretation.
 - id: define-escalation
   kind: definition
-  passage: 'Escalation in the model means two things together: the campaign deliberately shifts its own
-    composition toward an armed wing, and that shift draws heavier repression.'
+  passage: 'In the model, escalation means two things at once: the campaign shifts its own composition
+    toward an armed wing, and that shift draws heavier repression.'
   rationale: 'Stipulative definition internal to the model. Escalation is one scalar driving two coupled
     changes: the campaign shifts its own initial composition toward an armed wing, and repression intensity
     rises. It is not a measurement of any campaign and does not correspond to any coding rule in NAVCO
     or any other dataset.'
 - id: define-strippable-cooperation
   kind: definition
-  passage: 'The institutional condition is reduced to a single interpretable quantity: how much of the
-    apparatus''s cooperation an intact civilian campaign could strip.'
+  passage: The institutional setting is summarised by one quantity, the share of the apparatus's cooperation
+    that an intact civilian campaign could withdraw.
   rationale: Stipulative definition. The whole institutional environment is compressed into one scalar,
     the cooperation an intact civilian campaign could withdraw from the apparatus. The named real-world
     sources of insulation are offered as interpretation of the parameter, not as separately modelled mechanisms.
 - id: interpret-localised-not-overturned
   kind: interpretation
-  passage: 'This is the model reproducing the empirical baseline it was built to respect, and it should
-    be read that way: the general finding that escalation is counterproductive is not overturned here,
-    it is localized.'
+  passage: This reproduces the empirical finding that escalation is generally counterproductive and identifies
+    the narrow set of conditions in which it is not.
   rationale: An interpretation of the sweep, not an additional result. The model was built so that the
     civilian route to removal usually dominates, which is what the cited empirical literature reports;
     the contribution is the location of the exception, not a revision of the general finding. A reader
     who rejects the baseline would reject the calibration of the removal hazard as well.
 - id: interpret-not-advice
   kind: normative
-  passage: It is not advice.
+  passage: 'It is not advice: a decision about escalation concerns a particular apparatus, particular
+    factions and particular consequences, none of which the model contains.'
   rationale: A normative limit the authors place on the work. The model prices a trade-off between three
     outcomes and takes no position on which outcome anyone should weigh most heavily, or on what any person
     facing an actual incumbent should do. No parameter here was estimated from any case.
 - id: interpret-flank-measures-another-quantity
   kind: interpretation
-  passage: Third-party support for a faction is not the campaign's organizational capacity, and neither
-    is the character of the regime that follows.
+  passage: Third-party support for a faction is distinct from the campaign's organisational capacity and
+    from the character of the successor regime.
   rationale: An interpretation of the relationship between simpson2022 and this model, not a criticism
     of that work and not a result. The experiments measure third-party attitudes toward a faction; the
     model tracks surviving organizational capacity and the character of a successor. The two are compatible,

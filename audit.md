@@ -2,6 +2,14 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-22 — prose revision
+
+Prose revision against the house standards. No computation, number, citation or conclusion changed.
+  - Manuscript rewritten paragraph by paragraph; prose shortened from about 3,250 to about 2,750 words. Structure is now introduction, the incumbent's decision, differential attrition, the three outcomes, robustness, radical-flank effects, limitations.
+  - Removed contrast framing ('rather than' from eleven instances to none), meta-commentary, epigrams and colloquial phrasing. Corrected an overstatement of Kadivar's finding in the abstract.
+  - Figure titles and annotations rewritten to state quantities; figures regenerated and the execution re-recorded (24 invariants pass).
+  - Claim ledger re-bound; all 56 bindings pass. README rewritten as one line per paragraph with the new abstract.
+
 ## 2026-09-06 — v1, complete
 
 Scope: the whole paper, three mechanisms, the coupling and the evidence base, from the seed chat to the built PDF and the bound claim ledger.

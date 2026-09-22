@@ -1,6 +1,6 @@
 {
-  "pdf_sha256": "31d360492a609dc723eeec3b68af6b3c3e1a5376ac7739af8fe3d381bc113f3d",
-  "page_count": 11,
+  "pdf_sha256": "6b125d53d061bdbcde32440291dfda2e68f0a036a8bfa79ca9cc3628862a9913",
+  "page_count": 10,
   "pages_inspected": [
     1,
     2,
@@ -11,9 +11,8 @@
     7,
     8,
     9,
-    10,
-    11
+    10
   ],
   "all_pages_inspected": true,
-  "notes": "Every page rendered and read at full size. Title page, abstract and all six sections set correctly; the running head reads 'Concession and Succession' and pagination is continuous. Both figures were inspected in the page context at final scale, not only as source PNGs. Figure 1 on page 5: the three panels are legible, the categorical legend in panel (a) sits over the grey wait region and was given an opaque background during review so the grey swatch remains visible, and the dotted baseline annotation in panel (c) is small but readable. Figure 2 on page 7: the ensemble annotation in panel (c) originally rendered as dark text directly over the green bar with poor contrast, and was moved above the bars into a boxed area with the y-limit raised to make room; it is legible at page scale now. Panel (b) was re-scaled to a 0.12 x-range so the threshold step is visible rather than a hairline. The bibliography runs from page 9 to page 11, all 28 entries present, DOIs unbroken, and the diacritics in Escriba-Folch and Havard render correctly. No overfull lines, no clipped figures, no orphaned headings. Rebuild note: after the eleven-page inspection the metadata status was flipped from built to published, which is a hashed build input, so the PDF was re-rendered and its hash changed from 9752f75cf524 to 31d360492a60. The rendered text was compared before and after with pdftotext and is byte-for-byte identical, and the page count is unchanged at 11; only the publication status differs. No page was re-inspected because no page changed."
+  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and seven body sections set correctly with descriptive headings; running head and pagination are continuous. The inline closed-form boundary on page 4 and the odds expression on page 4 render correctly. Both figures were regenerated with descriptive panel titles ('a duty' style editorial titles such as 'attrition changes the campaign without changing anyone's mind', 'escalation helps removal only in a narrow corner' and 'the price of the removal optimum' were replaced) and annotations that state values. The horizontal axis of figure 2(b) now uses 'withdraw' to match the text. Figures were inspected as source images and in page context on pages 5 and 6. The bibliography runs pages 8 to 10 with all 28 entries. No overfull lines, clipped figures or orphaned headings."
 }

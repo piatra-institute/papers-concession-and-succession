@@ -18,12 +18,13 @@ The concession from Simpson, Willer and Feinberg. The radical-flank experiments 
 
 ## Reverse outline
 
-1. *Two findings that were never put in the same model* — states the two literatures, establishes with Geddes that removal is not the outcome anyone wants, and declares the model's status before any result appears. The declaration matters: everything after it is a property of stipulated functions, and a reader who misses this will misread the whole paper.
-2. *What the incumbent is choosing between* — the three-option decision and its cost structure. Carries the attention result, which is the paper's most counterintuitive and least central finding, and the closed-form threshold, which is its most checkable.
-3. *Composition changes without anyone changing their mind* — differential attrition, the closed form, and the null. Deliberately contains no decision by anyone, which is what makes it a mechanism rather than a story about radicalization.
-4. *Three outcomes and three maxima* — the coupling. Carries the central result. The section is arranged so that the narrow corner is found before the divergence is displayed, because displaying the divergence first would invite the reader to assume the corner is large.
-5. *Whether the divergence survives other parameters* — the ensemble, then the two strongest objections, answered rather than deflected.
-6. *What is not being claimed* — four limits, three of which would strengthen the conclusion if repaired, and one, the differential sensitivity, which is the parameter everything in section 3 rests on and which nobody has measured.
+1. *Introduction* — the removal literature, the successor literature, why they must be combined, and the status of the model.
+2. *The incumbent's decision* — the three options and their costs, the effect of attention, the effect of escalation on the concession region, and the closed-form boundary.
+3. *Differential attrition under repression* — the odds formula, parity, the equal-sensitivity null, and why the two mechanisms must be combined.
+4. *Removal, durability and accountability* — the definition of escalation, the three outcomes, the institutional setting, and the divergence at the most favourable setting.
+5. *Robustness of the divergence* — the 600-draw ensemble.
+6. *Relation to radical-flank effects* — the experimental evidence and why it measures a different quantity, and the objection that a campaign may have no better option.
+7. *Limitations* — stipulated forms, backfire and concession from strength, the unmeasured sensitivity difference, further assumptions, and the absence of data or advice.
 
 ## Changes the review made
 

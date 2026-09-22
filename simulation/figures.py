@@ -32,8 +32,8 @@ def plot_choice(res, path):
     extent = [lev[0], lev[-1], loy[0], loy[-1]]
 
     for ax, key, title in (
-            (axes[0], "high", "a. the choice, campaign in full view"),
-            (axes[1], "escalated", "b. the same, after escalation")):
+            (axes[0], "high", "a. cheapest option, attention high"),
+            (axes[1], "escalated", "b. cheapest option after escalation")):
         ax.imshow(np.array(C["fields"][key]), origin="lower", aspect="auto",
                   extent=extent, cmap=cmap, vmin=0, vmax=2, interpolation="nearest")
         ax.set_xlabel("material leverage withdrawn", fontsize=8.5)
@@ -63,7 +63,7 @@ def plot_choice(res, path):
     ax.set_xlabel("repression intensity", fontsize=8.5)
     ax.set_ylabel(f"fraction, after {A['periods']} periods", fontsize=8.5)
     ax.set_ylim(0, 1.0)
-    ax.set_title("c. attrition changes the campaign without changing anyone's mind",
+    ax.set_title("c. composition and capacity under repression",
                  fontsize=9.5, color=INK, loc="left")
     ax.legend(fontsize=8, frameon=False, loc="upper left")
 
@@ -91,14 +91,14 @@ def plot_divergence(res, path):
         ax.axvline(x, color=color, lw=0.9, ls="--")
     ax.set_xlabel("escalation", fontsize=8.5)
     ax.set_ylabel("probability", fontsize=8.5)
-    ax.set_title("a. the three outcomes do not peak together", fontsize=9.5,
+    ax.set_title("a. outcomes as a function of escalation", fontsize=9.5,
                  color=INK, loc="left")
     ax.legend(fontsize=7.6, frameon=True, framealpha=0.92, facecolor="white",
               edgecolor="none", loc="center right")
     ax.text(K["argmax_removal"] + 0.02, 0.008,
             f"removal peaks at {K['argmax_removal']:.2f}", fontsize=7.8, color=RED)
     ax.text(K["argmax_accountable"] + 0.02, 0.008,
-            "accountable succession\npeaks here", fontsize=7.8, color=GREEN)
+            "accountability\npeak", fontsize=7.8, color=GREEN)
 
     ax = axes[1]
     _style(ax)
@@ -110,16 +110,16 @@ def plot_divergence(res, path):
     ax.axvline(K["strip_threshold"], color=INK, lw=0.9, ls=":")
     ax.axvline(K["focal_strip"], color=AMBER, lw=0.9, ls="--")
     ax.text(K["strip_threshold"] + 0.002, 0.86,
-            f"escalation stops helping\nabove {K['strip_threshold']:.4f}",
+            f"no removal gain\nabove {K['strip_threshold']:.4f}",
             fontsize=7.8, color=INK)
     ax.text(K["focal_strip"] + 0.002, 0.30,
-            f"escalation's best case,\nat {K['focal_strip']:.4f}",
+            f"most favourable\nsetting, {K['focal_strip']:.4f}",
             fontsize=7.8, color=AMBER)
     ax.set_xlim(0, 0.12)
-    ax.set_xlabel("cooperation an intact civilian campaign can strip", fontsize=8.5)
+    ax.set_xlabel("cooperation an intact civilian campaign can withdraw", fontsize=8.5)
     ax.set_ylabel("escalation at the optimum", fontsize=8.5)
     ax.set_ylim(-0.05, 1.05)
-    ax.set_title("b. escalation helps removal only in a narrow corner", fontsize=9.5,
+    ax.set_title("b. optimal escalation by institutional setting", fontsize=9.5,
                  color=INK, loc="left")
     ax.legend(fontsize=7.5, frameon=True, framealpha=0.92, facecolor="white",
               edgecolor="none", loc="center right")
@@ -129,7 +129,7 @@ def plot_divergence(res, path):
     ax.bar([0, 1], [1.0, K["accountable_retained_share"]], width=0.55,
            color=[GREEN, AMBER])
     ax.set_xticks([0, 1])
-    ax.set_xticklabels(["escalate for\naccountability", "escalate for\nremoval"],
+    ax.set_xticklabels(["accountability-\nmaximising", "removal-\nmaximising"],
                        fontsize=8.4)
     ax.set_ylabel("accountable succession, relative to its own best", fontsize=8.5)
     ax.set_ylim(0, 1.5)
@@ -138,12 +138,12 @@ def plot_divergence(res, path):
             color=INK)
     ax.text(0, 1.04, "1.000", ha="center", fontsize=8.4, color=INK)
     ax.text(0.5, 0.985,
-            f"in all {K['ensemble_diverged']} of {K['ensemble_helped']} parameter draws where\n"
-            f"escalation raised the chance of removal,\nit lowered this; the best case retained "
+            f"ensemble: lower in {K['ensemble_diverged']} of {K['ensemble_helped']} draws\n"
+            f"where removal rose;\nmaximum retained "
             f"{K['ensemble_max_retained']:.3f}",
             transform=ax.transAxes, ha="center", fontsize=7.8, color=INK, va="top",
             bbox=dict(facecolor="white", edgecolor=GRID, linewidth=0.6, pad=3.2))
-    ax.set_title("c. the price of the removal optimum", fontsize=9.5, color=INK,
+    ax.set_title("c. accountability at the removal optimum", fontsize=9.5, color=INK,
                  loc="left")
 
     fig.tight_layout()
