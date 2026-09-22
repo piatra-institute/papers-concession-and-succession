@@ -1,5 +1,5 @@
 {
-  "pdf_sha256": "6b125d53d061bdbcde32440291dfda2e68f0a036a8bfa79ca9cc3628862a9913",
+  "pdf_sha256": "7ebfb73d0ec08f5f0070534521c2f0e399712a51f784152316fc9b313a9168cc",
   "page_count": 10,
   "pages_inspected": [
     1,
@@ -14,5 +14,5 @@
     10
   ],
   "all_pages_inspected": true,
-  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and seven body sections set correctly with descriptive headings; running head and pagination are continuous. The inline closed-form boundary on page 4 and the odds expression on page 4 render correctly. Both figures were regenerated with descriptive panel titles ('a duty' style editorial titles such as 'attrition changes the campaign without changing anyone's mind', 'escalation helps removal only in a narrow corner' and 'the price of the removal optimum' were replaced) and annotations that state values. The horizontal axis of figure 2(b) now uses 'withdraw' to match the text. Figures were inspected as source images and in page context on pages 5 and 6. The bibliography runs pages 8 to 10 with all 28 entries. No overfull lines, clipped figures or orphaned headings."
+  "notes": "All ten pages of the rebuilt PDF were read at full size. Title, abstract and seven body sections set correctly with descriptive headings; running head and pagination are continuous. The inline closed-form boundary on page 4 and the odds expression on page 4 render correctly. Both figures were regenerated with descriptive panel titles ('a duty' style editorial titles such as 'attrition changes the campaign without changing anyone's mind', 'escalation helps removal only in a narrow corner' and 'the price of the removal optimum' were replaced) and annotations that state values. The horizontal axis of figure 2(b) now uses 'withdraw' to match the text. Figures were inspected as source images and in page context on pages 5 and 6. The bibliography runs pages 8 to 10 with all 28 entries. No overfull lines, clipped figures or orphaned headings. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (6b125d53d061 to 7ebfb73d0ec0); the rendered text is byte-for-byte identical and no page was re-inspected."
 }
