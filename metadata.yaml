@@ -30,7 +30,6 @@ abstract: 'Two findings about campaigns against entrenched rulers have been esta
 build_resources:
 - simulation/output/figures/choice.png
 - simulation/output/figures/divergence.png
-web_blurb: Nonviolent campaigns unseat rulers more often; armed revolutions that succeed resist counterrevolution;
-  sustained unarmed mobilization is what produces successors that answer to anyone. Coupling the three
-  in one model finds that where escalation improves the odds of removal, it costs almost all of the accountable
-  succession.
+web_blurb: Nonviolent campaigns remove rulers more often, while armed revolutions that succeed are reversed
+  less often. A model combining both findings shows that escalation raises the chance of removal only
+  in a narrow range of conditions, and in that range it sharply lowers the chance of an accountable successor.
